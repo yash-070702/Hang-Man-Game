@@ -296,7 +296,7 @@ const getRandomWord=()=>{
             hint: "Exceptionally clever, talented, or impressive."
         },
     ];
-    const {word,hint}=wordList[Math.floor(Math.random()*wordList.length)];
+    const {word,hint}=wordList[Math.ceil(Math.random()*wordList.length)];
     currentWord=word;
     console.log(word);
     document.querySelector(".hint-text b").innerHTML=hint;
